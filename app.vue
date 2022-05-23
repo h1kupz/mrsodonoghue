@@ -12,13 +12,4 @@
 
 <script lang="ts" setup>
 import "./assets/css/tailwind.css";
-export default {
-  head() {
-    return {
-      script: [
-        { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" },
-      ],
-    };
-  },
-};
 </script>
