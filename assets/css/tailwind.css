@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply w-full mx-auto max-w-screen-sm font-sans text-center bg-background;
+  }
+  header {
+    @apply fixed top-6 w-full max-w-screen-sm;
+  }
+  footer {
+    @apply m-2;
+  }
+  body {
+    @apply text-secondary;
+  }
+  section {
+    @apply mx-2 mt-24 p-5 pb-3 rounded bg-primary min-h-screen;
+    @apply flex flex-col;
+    @apply bg-[url('http://oxenfree.net/images/OX_Mod_bg.jpg')] bg-cover bg-center rounded;
+  }
+  h1 {
+    @apply font-bold leading-relaxed tracking-widest uppercase text-5xl mb-4;
+  }
+  h2 {
+    @apply font-bold uppercase tracking-widest text-3xl;
+  }
+  h3 {
+    @apply font-semibold uppercase tracking-wide text-2xl;
+  }
+  h4 {
+    @apply font-semibold uppercase tracking-widest text-lg;
+  }
+  h4 {
+    @apply font-semibold uppercase tracking-wide text-lg;
+  }
+  h5 {
+    @apply tracking-wide mb-6;
+  }
+}
+
+@layer components {
+  .modgrow {
+    @apply grow h-full flex flex-col justify-center;
+  }
+  .modbutton {
+    @apply bg-buttons hover:bg-background backdrop-filter backdrop-blur bg-opacity-70;
+  }
+  .menuOverlay {
+    @apply modgrow bg-buttons backdrop-filter backdrop-blur-[3px] bg-opacity-60 mt-2 px-12 rounded;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
