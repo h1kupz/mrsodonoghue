@@ -20,7 +20,7 @@
   section {
     @apply mx-2 mt-24 p-5 pb-3 rounded bg-primary min-h-screen;
     @apply flex flex-col;
-    @apply bg-[url('http://oxenfree.net/images/OX_Mod_bg.jpg')] bg-cover bg-center rounded;
+    @apply bg-[url('http://oxenfree.net/images/OX_Mod_bg.jpg')] bg-fixed bg-cover bg-center rounded;
   }
   h1 {
     @apply font-bold leading-relaxed tracking-widest uppercase text-5xl mb-4;
