@@ -8,7 +8,7 @@
         <!-- bgImage -->
         <div
           class="bg-cover bg-center rounded"
-          v-for="bakery in bakery"
+          v-for="bakery of bakery"
           :key="bakery.slug"
           v-bind:style="{ backgroundImage: 'url(' + bakery.image + ')' }"
         >
@@ -59,13 +59,10 @@
 </template>
 
 http://oxenfree.net/images/OX_Mod_bg.jpg
-<script lang="ts">
-export default {
-  async asyncData({ $content }) {
-    const bakery = await $content("bakery").sortBy("order").fetch();
-    return {
-      bakery,
-    };
-  },
-};
+<script setup>
+const { data: bakery } = await useAsyncData("bakery", () =>
+  $fetch("@/content/bakery")
+);
 </script>
+
+const { bakery } = await useAsyncData('bakery', () => $fetch('/content/bakery'))
