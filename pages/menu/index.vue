@@ -8,7 +8,7 @@
         <!-- bgImage -->
         <div
           class="bg-cover bg-center rounded"
-          v-for="bakery of bakery"
+          v-for="bakery in bakery"
           :key="bakery.slug"
           v-bind:style="{ backgroundImage: 'url(' + bakery.image + ')' }"
         >

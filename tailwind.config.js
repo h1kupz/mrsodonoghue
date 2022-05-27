@@ -8,7 +8,6 @@ module.exports = {
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
     "./*.{vue,js,ts}",
-    "./nuxt.config.{js,ts}",
   ],
   darkMode: "class", // or 'media' or 'class'
   theme: {
