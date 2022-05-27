@@ -31,5 +31,5 @@ export default defineNuxtConfig({
       },
     },
   },
-  modules: [],
+  modules: ["@nuxt/content"],
 });

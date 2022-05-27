@@ -2,30 +2,13 @@ backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
 
-media_folder: static/images
-public_folder: /img
+media_folder: /images
+public_folder: /
 
 collections:
-  - name: "gallery"
-    label: "Gallery"
-    folder: "content/gallery"
-    format: "frontmatter"
-    create: true
-    identifier_field: name
-    slug: "{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - {
-          label: "Image",
-          name: "image",
-          widget: "image",
-          choose_url: true,
-          media_folder: "images",
-        }
-  - name: "crew"
-    label: "Crew"
-    folder: "content/crew"
+  - name: "bakery"
+    label: "Bakery"
+    folder: "content/bakery"
     format: "frontmatter"
     create: true
     identifier_field: name
@@ -35,25 +18,6 @@ collections:
     fields:
       - { label: "Order", name: "order", widget: "number" }
       - { label: "Name", name: "name", widget: "string" }
-      # - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Position", name: "position", widget: "string" }
-      - { label: "Bio", name: "bio", widget: "markdown" }
+      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Price", name: "price", widget: "number" }
       - { label: "Image", name: "image", widget: "image", choose_url: true }
-  - name: "hours"
-    label: "Hours"
-    folder: "content/hours"
-    format: "frontmatter"
-    create: true
-    identifier_field: title
-    slug: "{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Sunday", name: "sunday", widget: "string" }
-      - { label: "Monday", name: "monday", widget: "string" }
-      - { label: "Tuesday", name: "tuesday", widget: "string" }
-      - { label: "Wednesday", name: "wednesday", widget: "string" }
-      - { label: "Thursday", name: "thursday", widget: "string" }
-      - { label: "Friday", name: "friday", widget: "string" }
-      - { label: "Saturday", name: "saturday", widget: "string" }

@@ -8,22 +8,22 @@
         <!-- bgImage -->
         <div
           class="bg-cover bg-center rounded"
-          v-for="(menu, index) in bakery"
-          :key="menu.itemName"
-          v-bind:style="{ backgroundImage: 'url(' + menu.itemImage + ')' }"
+          v-for="bakery of bakery"
+          :key="bakery.slug"
+          v-bind:style="{ backgroundImage: 'url(' + bakery.image + ')' }"
         >
           <!-- overlay -->
           <div class="menuOverlay">
             <!-- itemName -->
             <h3 class="p-2 pt-4" @click="menuItemClick(index)">
-              {{ menu.itemName }}
+              {{ bakery.name }}
             </h3>
             <!-- itemDescription -->
             <p>
-              {{ menu.itemDescription }}
+              {{ bakery.description }}
             </p>
             <!-- itemPrice -->
-            <h4 class="m-2">{{ menu.itemPrice }}</h4>
+            <h4 class="m-2">{{ bakery.price }}</h4>
           </div>
         </div>
       </template>
@@ -59,56 +59,12 @@
 </template>
 
 http://oxenfree.net/images/OX_Mod_bg.jpg
-<script>
+<script lang="ts">
 export default {
-  data() {
+  async asyncData({ $content }) {
+    const bakery = await $content("bakery").sortBy("order").fetch();
     return {
-      bakery: [
-        {
-          itemName: "Bread",
-          itemImage: "",
-          itemDescription:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam molestias in dolorem? Quaerat atque, sint vero possimus dolores, deleniti temporibus nisi amet ab odit velit voluptatum soluta.",
-          itemPrice: "00 k",
-        },
-        {
-          itemName: "Bread",
-          itemImage: "",
-          itemDescription:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam molestias in dolorem? Quaerat atque.",
-          itemPrice: "00 k",
-        },
-        {
-          itemName: "Bread",
-          itemImage: "",
-          itemDescription:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam molestias in dolorem? Quaerat atque, sint vero possimus dolores, deleniti temporibus nisi amet ab odit velit voluptatum soluta.",
-          itemPrice: "00 k",
-        },
-      ],
-      breakfast: [
-        {
-          itemName: "Breakfast",
-          itemImage: "",
-          itemDescription:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam molestias in dolorem? Quaerat atque, sint vero possimus dolores, deleniti temporibus nisi amet ab odit velit voluptatum soluta.",
-          itemPrice: "00 k",
-        },
-        {
-          itemName: "Breakfast",
-          itemImage: "",
-          itemDescription:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam molestias in dolorem? Quaerat atque, sint vero possimus dolores, deleniti temporibus nisi amet ab odit velit voluptatum soluta.",
-          itemPrice: "00 k",
-        },
-        {
-          itemName: "Breakfast",
-          itemImage: "",
-          itemDescription:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam molestias in dolorem? Quaerat atque, sint vero possimus dolores, deleniti temporibus nisi amet ab odit velit voluptatum soluta.",
-          itemPrice: "00 k",
-        },
-      ],
+      bakery,
     };
   },
 };
