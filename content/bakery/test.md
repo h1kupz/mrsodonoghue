@@ -1,6 +1,7 @@
 ---
-order: 2
-title: Test Item Edit
-description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-price: 38
+order: 01
+title: Multi Grain Dinner Rolls
+description: Flour, Wholewheat flour, pumpkin seeds, flaxseed, rolled oat, and  mixed grains, salt, vegetable oil & water
+price: 35
+image:
 ---

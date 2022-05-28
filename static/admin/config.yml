@@ -2,8 +2,12 @@ backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
 
-media_folder: /images
-public_folder: /
+media_folder: "static/images"
+public_folder: "/images"
+
+site_url: https://mrsodonoghue.netlify.app
+display_url: https://mrsodonoghue.netlify.app
+logo_url: https://mrsodonoghue.netlify.app/assets/images/ModBadge.png
 
 collections:
   - name: "bakery"
@@ -20,3 +24,11 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "markdown" }
       - { label: "Price", name: "price", widget: "number" }
+      - {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          choose_url: true,
+          media_folder: "images",
+          required: false,
+        }

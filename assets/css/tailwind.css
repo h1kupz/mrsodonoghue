@@ -6,10 +6,10 @@
 
 @layer base {
   html {
-    @apply w-full mx-auto max-w-screen-lg font-sans text-center bg-background;
+    @apply w-full mx-auto max-w-screen-xl font-sans text-center bg-background;
   }
   header {
-    @apply fixed top-6 w-full max-w-screen-lg;
+    @apply fixed top-6 w-full max-w-screen-xl;
   }
   footer {
     @apply m-2;
@@ -18,7 +18,7 @@
     @apply text-secondary;
   }
   section {
-    @apply mx-2 mt-24 p-5 pb-3 rounded bg-primary min-h-screen;
+    @apply mx-2 mt-20 p-5 pb-3 rounded bg-primary min-h-screen;
     @apply flex flex-col;
     @apply bg-[url('http://oxenfree.net/images/OX_Mod_bg.jpg')] bg-cover bg-center rounded;
   }
@@ -26,16 +26,13 @@
     @apply font-bold leading-relaxed tracking-widest uppercase text-5xl mb-4;
   }
   h2 {
-    @apply font-bold uppercase tracking-widest text-3xl;
+    @apply font-bold uppercase tracking-widest text-2xl;
   }
   h3 {
     @apply font-semibold uppercase tracking-wide text-2xl;
   }
   h4 {
-    @apply font-semibold uppercase tracking-widest text-lg;
-  }
-  h4 {
-    @apply font-semibold uppercase tracking-wide text-lg;
+    @apply font-semibold uppercase tracking-wider;
   }
   h5 {
     @apply tracking-wide mb-6;

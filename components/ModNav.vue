@@ -1,11 +1,11 @@
 <template>
-  <div class="flex h-16 mx-2">
+  <div class="flex h-12 mx-2">
     <a
       href="/"
-      class="px-6 flex flex-col justify-center rounded rounded-tl-[16px] hover:rounded-tl mr-2 modbutton"
+      class="lg:modgrow px-4 flex flex-col justify-center rounded rounded-tl-[16px] hover:rounded-tl mr-2 modbutton"
     >
       <img
-        class="h-8 self-center"
+        class="h-7 self-center"
         src="@/assets/images/ModIcon.png"
         alt="Home"
       />
