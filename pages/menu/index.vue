@@ -5,26 +5,25 @@
       <!-- section -->
       <template v-slot:sectionName><h2 class="pt-1">Bakery</h2></template>
       <template v-slot:item>
-        <!-- bgImage -->
+        <!-- bgImage v-bind:style="{ backgroundImage: 'url(' + bakery.image + ')' }" -->
         <div
           class="bg-cover bg-center rounded"
           :data="bakery"
           v-for="bakery of bakery"
           :key="bakery.slug"
-          v-bind:style="{ backgroundImage: 'url(' + bakery.image + ')' }"
         >
           <!-- overlay -->
           <div class="menuOverlay">
             <!-- itemName -->
-            <h3 class="p-2 pt-4" @click="menuItemClick(index)">
+            <h3 @click="menuItemClick(index)">
               {{ bakery.title }}
             </h3>
             <!-- itemDescription -->
             <p>
               {{ bakery.description }}
             </p>
-            <!-- itemPrice -->
-            <h4 class="m-2">{{ bakery.price }} K</h4>
+            <!-- itemPrice
+            <h4 class="pb-3">{{ bakery.price }} K</h4> -->
           </div>
         </div>
       </template>
@@ -38,11 +37,7 @@
           <!-- overlay -->
           <div class="menuOverlay">
             <!-- itemName -->
-            <h3 class="p-2 pt-4" @click="menuItemClick(index)">Coming Soon</h3>
-            <!-- itemDescription -->
-            <p></p>
-            <!-- itemPrice -->
-            <h4 class="m-2"></h4>
+            <h3 class="pb-3" @click="menuItemClick(index)">Coming Soon</h3>
           </div>
         </div>
       </template>
@@ -52,6 +47,6 @@
 
 <script setup>
 const { data: bakery } = await useAsyncData("bakery", () =>
-  queryContent("/bakery").find()
+  queryContent("/bakery").sort({ order: 1 }).find()
 );
 </script>

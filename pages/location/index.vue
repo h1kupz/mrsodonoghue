@@ -5,7 +5,7 @@
       Jl. Kaliurang km. 7,8, Jl. Kopen Utama No.16, Banteng, Sinduharjo,
       Ngaglik, Sleman Regency, Special Region of Yogyakarta 55581
     </h5>
-    <div class="flex">
+    <div class="flex my-8">
       <a
         href="https://api.whatsapp.com/send?phone=6287855310153"
         target="_blank"

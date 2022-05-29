@@ -9,7 +9,7 @@
     </div>
     <!-- Arrow -->
     <div
-      class="absolute top-1.5 left-2 transition-transform peer-checked:rotate-0 rotate-180"
+      class="absolute top-1 left-2 transition-transform peer-checked:rotate-0 rotate-180"
     >
       <div>
         <svg

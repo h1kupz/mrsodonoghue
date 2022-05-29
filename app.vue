@@ -10,6 +10,22 @@
   </footer>
 </template>
 
-<script lang="ts" setup>
-import "./assets/css/tailwind.css";
+<script lang="ts">
+export default {
+  head() {
+    return {
+      title: "Mrs O'Donoghue",
+      link: [
+        {
+          rel: "icon",
+          type: "image/png",
+          href: `favicon.png`,
+        },
+      ],
+      script: [
+        { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" },
+      ],
+    };
+  },
+};
 </script>

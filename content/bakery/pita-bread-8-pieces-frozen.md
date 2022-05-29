@@ -1,7 +1,7 @@
 ---
-order: 3
+order: 24
 title: Pita Bread 8 pieces (frozen)
-description: Description
+description:
 price: 25
-image: images/pitabread.jpg
+image: content/bakery/images/pitabread.jpg
 ---

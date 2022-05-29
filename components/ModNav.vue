@@ -2,7 +2,7 @@
   <div class="flex h-12 mx-2">
     <a
       href="/"
-      class="lg:modgrow px-4 flex flex-col justify-center rounded rounded-tl-[16px] hover:rounded-tl mr-2 modbutton"
+      class="md:modgrow px-4 flex flex-col justify-center rounded rounded-tl-[16px] hover:rounded-tl mr-2 modbutton"
     >
       <img
         class="h-7 self-center"
