@@ -45,3 +45,183 @@ collections:
           choose_url: true,
           required: false,
         }
+
+  - name: "breakfast"
+    label: "Breakfast"
+    folder: "content/breakfast"
+    media_folder: ""
+    format: "frontmatter"
+    create: true
+    identifier_field: name
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Order",
+          name: "order",
+          widget: "number",
+          value_type: "int",
+          default: 00,
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "markdown",
+          required: false,
+        }
+      - { label: "Price", name: "price", widget: "number" }
+      - {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          media_folder: "/content/bakery",
+          public_folder: "/content/bakery/",
+          choose_url: true,
+          required: false,
+        }
+
+  - name: "sandwiches"
+    label: "Sandwiches"
+    folder: "content/sandwiches"
+    media_folder: ""
+    format: "frontmatter"
+    create: true
+    identifier_field: name
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Order",
+          name: "order",
+          widget: "number",
+          value_type: "int",
+          default: 00,
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "markdown",
+          required: false,
+        }
+      - { label: "Price", name: "price", widget: "number" }
+      - {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          media_folder: "/content/sandwiches",
+          public_folder: "/content/sandwiches/",
+          choose_url: true,
+          required: false,
+        }
+
+  - name: "main"
+    label: "Main"
+    folder: "content/main"
+    media_folder: ""
+    format: "frontmatter"
+    create: true
+    identifier_field: name
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Order",
+          name: "order",
+          widget: "number",
+          value_type: "int",
+          default: 00,
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "markdown",
+          required: false,
+        }
+      - { label: "Price", name: "price", widget: "number" }
+      - {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          media_folder: "/content/main",
+          public_folder: "/content/main/",
+          choose_url: true,
+          required: false,
+        }
+
+  - name: "drinks"
+    label: "Drinks"
+    folder: "content/drinks"
+    media_folder: ""
+    format: "frontmatter"
+    create: true
+    identifier_field: name
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Order",
+          name: "order",
+          widget: "number",
+          value_type: "int",
+          default: 00,
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "markdown",
+          required: false,
+        }
+      - { label: "Price", name: "price", widget: "number" }
+      - {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          media_folder: "/content/drinks",
+          public_folder: "/content/drinks/",
+          choose_url: true,
+          required: false,
+        }
+
+  - name: "dessert"
+    label: "Dessert"
+    folder: "content/dessert"
+    media_folder: ""
+    format: "frontmatter"
+    create: true
+    identifier_field: name
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Order",
+          name: "order",
+          widget: "number",
+          value_type: "int",
+          default: 00,
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "markdown",
+          required: false,
+        }
+      - { label: "Price", name: "price", widget: "number" }
+      - {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          media_folder: "/content/dessert",
+          public_folder: "/content/dessert/",
+          choose_url: true,
+          required: false,
+        }

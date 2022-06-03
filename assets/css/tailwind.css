@@ -52,6 +52,12 @@
   .menuOverlay {
     @apply modgrow bg-buttons backdrop-filter backdrop-blur-[3px] bg-opacity-60 mt-2 px-4 rounded;
   }
+  .menuSection {
+    @apply text-4xl mt-7 mb-3;
+  }
+  .price {
+    @apply pb-3;
+  }
 }
 
 html {

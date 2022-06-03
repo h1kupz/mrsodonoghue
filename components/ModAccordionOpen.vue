@@ -9,7 +9,7 @@
     </div>
     <!-- Arrow -->
     <div
-      class="absolute top-1 left-2 transition-transform rotate-0 peer-checked:rotate-180"
+      class="absolute top-1 left-2 transition-transform peer-checked:rotate-0 rotate-180"
     >
       <div>
         <svg
@@ -28,7 +28,7 @@
     </div>
     <!-- Content -->
     <div
-      class="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-fit rounded-b"
+      class="overflow-hidden transition-all duration-500 peer-checked:max-h-0 max-h-fit rounded-b"
     >
       <slot name="item" />
     </div>
