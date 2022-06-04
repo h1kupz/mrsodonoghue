@@ -19,9 +19,7 @@
               {{ bakery.title }}
             </h3>
             <!-- itemDescription -->
-            <p>
-              {{ bakery.description }}
-            </p>
+            <MarkdownRenderer :value="bakery" />
             <h4 class="price">{{ bakery.price }} K</h4>
           </div>
         </div>
@@ -46,9 +44,7 @@
               {{ breakfast.title }}
             </h3>
             <!-- itemDescription -->
-            <p>
-              {{ breakfast.description }}
-            </p>
+            <MarkdownRenderer :value="breakfast" />
             <h4 class="price">{{ breakfast.price }} K</h4>
           </div>
         </div>
@@ -72,9 +68,7 @@
               {{ sandwiches.title }}
             </h3>
             <!-- itemDescription -->
-            <p>
-              {{ sandwiches.description }}
-            </p>
+            <MarkdownRenderer :value="sandwiches" />
             <h4 class="price">{{ sandwiches.price }} K</h4>
           </div>
         </div>
@@ -98,9 +92,7 @@
               {{ main.title }}
             </h3>
             <!-- itemDescription -->
-            <p>
-              {{ main.description }}
-            </p>
+            <MarkdownRenderer :value="main" />
             <h4 class="price">{{ main.price }} K</h4>
           </div>
         </div>
@@ -124,9 +116,7 @@
               {{ drinks.title }}
             </h3>
             <!-- itemDescription -->
-            <p>
-              {{ drinks.description }}
-            </p>
+            <MarkdownRenderer :value="drinks" />
             <h4 class="price">{{ drinks.price }} K</h4>
           </div>
         </div>
@@ -150,9 +140,7 @@
               {{ dessert.title }}
             </h3>
             <!-- itemDescription -->
-            <p>
-              {{ dessert.description }}
-            </p>
+            <MarkdownRenderer :value="dessert" />
             <h4 class="price">{{ dessert.price }} K</h4>
           </div>
         </div>
