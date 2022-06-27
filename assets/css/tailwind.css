@@ -18,9 +18,7 @@
     @apply text-secondary;
   }
   section {
-    @apply mx-2 mt-20 p-5 pb-3 md:px-24 lg:px-36 rounded bg-primary min-h-screen;
-    @apply flex flex-col;
-    @apply bg-[url('http://oxenfree.net/images/OX_Mod_bg.jpg')] bg-cover bg-center rounded;
+    @apply mx-2 mt-20 p-5 pb-3 md:px-24 lg:px-36 rounded bg-primary min-h-screen flex flex-col bg-[url('http://oxenfree.net/images/OX_Mod_bg.jpg')] bg-cover bg-center;
   }
   h1 {
     @apply font-bold leading-relaxed tracking-widest uppercase text-5xl mb-2;
@@ -58,6 +56,21 @@
   .price {
     @apply pb-3;
   }
+}
+
+/* Page Transittion */
+.page-enter-from{
+  opacity: 0;
+  transform: translateY(0);
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
 }
 
 html {

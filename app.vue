@@ -1,13 +1,7 @@
 <template>
-  <header class="z-20">
-    <ModNav />
-  </header>
-  <section>
+  <NuxtLayout>
     <NuxtPage />
-  </section>
-  <footer>
-    <ModFooter />
-  </footer>
+  </NuxtLayout>
 </template>
 
 <script lang="ts">
@@ -24,6 +18,9 @@ export default {
       ],
       script: [
         { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" },
+        {
+          src: "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css",
+        },
       ],
     };
   },

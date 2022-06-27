@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <main>
     <h1>Menu</h1>
-    <ModAccordionOpen>
+    <ModAccordion>
       <!-- section -->
       <template v-slot:sectionName><h2 class="pt-1">Bakery</h2></template>
       <template v-slot:item>
@@ -27,7 +27,7 @@
           </div>
         </div>
       </template>
-    </ModAccordionOpen>
+    </ModAccordion>
     <ModAccordionOpen>
       <!-- section -->
       <template v-slot:sectionName><h2 class="pt-1">Cafe</h2></template>
@@ -42,7 +42,7 @@
         </div>
       </template>
     </ModAccordionOpen>
-  </div>
+  </main>
 </template>
 
 <script setup>

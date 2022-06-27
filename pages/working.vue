@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <h1>Menu</h1>
     <!-- BAKERY -->
     <ModAccordion>
@@ -146,7 +146,7 @@
         </div>
       </template>
     </ModAccordion>
-  </div>
+  </main>
 </template>
 
 <script setup>

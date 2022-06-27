@@ -1,7 +1,7 @@
 <template>
   <div class="flex h-12 mx-2">
-    <a
-      href="/"
+    <nuxt-link
+      to="/"
       class="md:modgrow px-4 flex flex-col justify-center rounded rounded-tl-[16px] hover:rounded-tl mr-2 modbutton"
     >
       <img
@@ -9,13 +9,13 @@
         src="@/assets/images/ModIcon.png"
         alt="Home"
       />
-    </a>
-    <a href="/menu" class="modgrow rounded mr-2 modbutton">
-      <h4 class="self-center">Menu</h4>
-    </a>
-    <a href="/location" class="modgrow rounded mr-2 modbutton">
-      <h4 class="self-center">Location</h4>
-    </a>
+    </nuxt-link>
+    <nuxt-link to="/menu" class="modgrow rounded mr-2 modbutton"
+      ><h4 class="self-center">Menu</h4></nuxt-link
+    >
+    <nuxt-link to="/location" class="modgrow rounded mr-2 modbutton"
+      ><h4 class="self-center">Location</h4></nuxt-link
+    >
     <a
       href="#contact"
       class="modgrow rounded rounded-tr-[16px] hover:rounded-tr modbutton"
