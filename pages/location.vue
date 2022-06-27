@@ -3,8 +3,8 @@
     <div>
       <h1>Location</h1>
       <h5>
-        Jl. Kaliurang km. 7,8, Jl. Kopen Utama No.16, Banteng, Sinduharjo,
-        Ngaglik, Sleman Regency, Special Region of Yogyakarta 55581
+        Jl. Kaliurang km. 7,8, Jl. Kopen Utama No.16,<br />Banteng, Sinduharjo,
+        Ngaglik, Sleman Regency,<br />Special Region of Yogyakarta 55581
       </h5>
       <div class="flex my-8">
         <a
